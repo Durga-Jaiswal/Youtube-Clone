@@ -3,7 +3,7 @@ import connectDB from './db/index.js'
 import { app } from './app.js';
 
 dotenv.config({
-    path: './env'
+    path: './.env'
 })
 
 connectDB()
@@ -17,5 +17,5 @@ connectDB()
     })
 })
 .catch((err)=> {
-    console.log("MONGODB connection faild::", err);
+    console.log("MONGODB connection failed::", err);
 })
